@@ -1,0 +1,45 @@
+
+
+환경 확인을 위한 명령어 출력
+
+```bash
+pa10@pa10:~$ cat /etc/os-release
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+```
+    - ssh 원격 접속 
+ ```bash
+ pa9@pa9-Legion-Pro-5-16IAX10:~$ ssh pa10@pa10.local
+Welcome to Ubuntu 22.04.5 LTS (GNU/Linux 5.15.0-1061-raspi aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Last login: Tue Sep 22 14:09:49 2026 from 10.2.17.14
+```
+    - OpenCR USB 인식과 포트 접근 권한
+```bash
+pa10@pa10:~$ lsusb
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 008: ID 0483:5740 STMicroelectronics Virtual COM Port
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+pa10@pa10:~$ ls -l /dev/ttyACM*
+crw-rw---- 1 root dialout 166, 0 Sep 23 11:07 /dev/ttyACM0
+
+pa10@pa10:~$ groups
+pa10 adm dialout cdrom floppy sudo audio dip video plugdev netdev lxd
+```

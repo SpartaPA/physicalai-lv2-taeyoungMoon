@@ -1,0 +1,48 @@
+
+업로드 기록
+
+- 펌웨어 컴파일
+
+```bash
+pa10@pa10:~$ "$BASE/bin/arduino-cli" --config-file "$BASE/arduino-cli.yaml" \
+  compile --fqbn ROBOTIS:OpenCR:OpenCR --jobs 1 \
+  --output-dir "$BASE/output" \
+  "$BASE/sketches/opencr_position_p"
+Sketch uses 104296 bytes (13%) of program storage space. Maximum is 786432 bytes.
+Global variables use 40620 bytes of dynamic memory.
+```
+
+- 펌웨어 업로드
+    
+```bash
+pa10@pa10:~$ UPLOADER="$BASE/uploader-src/arduino/opencr_develop/opencr_ld/opencr_ld"
+"$UPLOADER" /dev/ttyACM0 115200 \
+  "$BASE/output/opencr_position_p.ino.bin" 1
+opencr_ld ver 1.0.4
+opencr_ld_main 
+>>
+file name : /home/pa10/pa-opencr-build/output/opencr_position_p.ino.bin 
+file size : 102 KB
+Open port OK
+Clear Buffer Start
+Clear Buffer End
+Board Name : OpenCR R1.0
+Board Ver  : 0x17020800
+Board Rev  : 0x00000000
+>>
+flash_erase : 0 : 0.855000 sec
+flash_write : 0 : 1.179000 sec 
+CRC OK 9B81E2 9B81E2 0.004000 sec
+[OK] Download 
+jump_to_fw 
+jump finished
+```
+
+- miniterm 실행
+
+```bash
+python3 -m serial.tools.miniterm "$PORT" 115200 --eol LF -e
+--- Miniterm on /dev/ttyACM0  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+Invalid setting. Finite Kp, positive speed or max, angle -90..90. Use k/v/a or s <Kp> <speed_deg_s|max> <angle_deg>.
+```
