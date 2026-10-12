@@ -1,0 +1,10 @@
+OS: Ubuntu 24.04.5 LTS
+Kernel: 7.0.0-34-generic
+ROS 2: lyrical 32.0.2-1noble.20260818.110358 (rclcpp)
+realsense2_camera: 4.57.7-3noble.20260818.145327
+OpenCV (C++, perception_node 링크): 4.6.0
+cv_bridge: 4.1.0-3noble.20260818.111737
+Python: Python 3.12.3
+Python OpenCV: 4.6.0
+rqt_image_view: 2.0.5-3noble.20260818.133427
+Camera: Intel RealSense D435, serial 261322072019, FW 5.15.1.55 (USB 3, 2026-10-12 rs-enumerate-devices 확인)

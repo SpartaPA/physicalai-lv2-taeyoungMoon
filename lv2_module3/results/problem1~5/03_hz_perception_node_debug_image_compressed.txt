@@ -1,0 +1,11 @@
+$ ros2 topic hz /perception_node/debug_image/compressed
+average rate: 4.443
+	min: 0.200s max: 0.235s std dev: 0.01453s window: 4
+average rate: 4.526
+	min: 0.200s max: 0.235s std dev: 0.01621s window: 8
+average rate: 4.585
+	min: 0.200s max: 0.235s std dev: 0.01660s window: 13
+average rate: 4.652
+	min: 0.200s max: 0.235s std dev: 0.01652s window: 18
+average rate: 4.645
+	min: 0.200s max: 0.235s std dev: 0.01650s window: 22

@@ -1,0 +1,4 @@
+header.stamp: 1791768434.874002686
+raw: /camera/camera/color/image_raw 424x240 encoding=rgb8
+mask: /perception_node/mask/compressed format=jpeg nonzero(>127)=0 px
+overlay: /perception_node/debug_image/compressed format=jpeg

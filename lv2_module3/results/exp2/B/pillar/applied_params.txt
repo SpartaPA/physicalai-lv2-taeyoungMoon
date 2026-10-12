@@ -1,0 +1,16 @@
+$ ros2 param set /perception_node hsv_lower [103, 30, 20]
+Set parameter successful
+$ ros2 param set /perception_node min_area_ratio 0.002
+Set parameter successful
+hsv_lower: Integer values are: [103, 30, 20]
+hsv_upper: Integer values are: [130, 255, 255]
+hsv_bright_enabled: Boolean value is: True
+hsv_bright_lower: Integer values are: [103, 150, 130]
+hsv_bright_upper: Integer values are: [130, 255, 255]
+open_kernel: Integer value is: 3
+close_kernel: Integer value is: 5
+min_area_ratio: Double value is: 0.002
+max_area_ratio: Double value is: 0.15
+aspect_max: Double value is: 4.0
+fill_min: Double value is: 0.6
+select_rule: String value is: shape

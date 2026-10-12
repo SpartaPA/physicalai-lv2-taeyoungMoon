@@ -1,0 +1,15 @@
+
+Files:             0_20261012_102713_no1_nontarget_v1_2026_10_12-10_27_14.mcap
+Bag size:          132.2 MiB
+Storage id:        mcap
+ROS Distro:        lyrical
+Duration:          15.077238953s
+Start:             Oct 12 2026 10:27:14.172457245 (1791768434.172457245)
+End:               Oct 12 2026 10:27:29.249696198 (1791768449.249696198)
+Messages:          906
+Topic information: Topic: /camera/camera/color/camera_info | Type: sensor_msgs/msg/CameraInfo | Count: 453 | Serialization Format: cdr
+                   Topic: /camera/camera/color/image_raw | Type: sensor_msgs/msg/Image | Count: 453 | Serialization Format: cdr
+Services:          0
+Service information: 
+Actions:           0
+Action information: 

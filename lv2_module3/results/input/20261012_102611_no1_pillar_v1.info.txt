@@ -1,0 +1,15 @@
+
+Files:             0_20261012_102611_no1_pillar_v1_2026_10_12-10_26_11.mcap
+Bag size:          131.6 MiB
+Storage id:        mcap
+ROS Distro:        lyrical
+Duration:          14.993394371s
+Start:             Oct 12 2026 10:26:11.680463713 (1791768371.680463713)
+End:               Oct 12 2026 10:26:26.673858084 (1791768386.673858084)
+Messages:          901
+Topic information: Topic: /camera/camera/color/camera_info | Type: sensor_msgs/msg/CameraInfo | Count: 450 | Serialization Format: cdr
+                   Topic: /camera/camera/color/image_raw | Type: sensor_msgs/msg/Image | Count: 451 | Serialization Format: cdr
+Services:          0
+Service information: 
+Actions:           0
+Action information: 

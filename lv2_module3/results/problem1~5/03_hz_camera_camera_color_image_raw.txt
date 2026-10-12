@@ -1,0 +1,11 @@
+$ ros2 topic hz /camera/camera/color/image_raw
+average rate: 34.473
+	min: 0.000s max: 0.034s std dev: 0.01053s window: 33
+average rate: 32.179
+	min: 0.000s max: 0.034s std dev: 0.00792s window: 63
+average rate: 31.435
+	min: 0.000s max: 0.034s std dev: 0.00661s window: 93
+average rate: 31.066
+	min: 0.000s max: 0.034s std dev: 0.00579s window: 123
+average rate: 30.849
+	min: 0.000s max: 0.034s std dev: 0.00521s window: 153

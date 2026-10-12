@@ -1,0 +1,31 @@
+$ ros2 topic echo /target --qos-reliability best_effort  (처음 3개 메시지)
+header:
+  stamp:
+    sec: 1791768378
+    nanosec: 402227295
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.04521301982245692
+  y: 0.6772133220910626
+  z: 0.005827437106918239
+---
+header:
+  stamp:
+    sec: 1791768378
+    nanosec: 435583252
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.045597484276729515
+  y: 0.6769353177946269
+  z: 0.005832350628930817
+---
+header:
+  stamp:
+    sec: 1791768378
+    nanosec: 468939209
+  frame_id: camera_color_optical_frame
+point:
+  x: 0.04549126368409725
+  y: 0.6770758039106662
+  z: 0.005891312893081761
+---

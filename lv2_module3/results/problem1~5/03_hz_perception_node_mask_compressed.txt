@@ -1,0 +1,11 @@
+$ ros2 topic hz /perception_node/mask/compressed
+average rate: 4.797
+	min: 0.200s max: 0.233s std dev: 0.01435s window: 4
+average rate: 4.734
+	min: 0.200s max: 0.233s std dev: 0.01539s window: 9
+average rate: 4.824
+	min: 0.200s max: 0.233s std dev: 0.01343s window: 14
+average rate: 4.818
+	min: 0.200s max: 0.233s std dev: 0.01366s window: 18
+average rate: 4.755
+	min: 0.200s max: 0.234s std dev: 0.01514s window: 23

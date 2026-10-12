@@ -1,0 +1,11 @@
+$ ros2 topic hz /target --qos-reliability best_effort
+average rate: 28.372
+	min: 0.016s max: 0.102s std dev: 0.01359s window: 27
+average rate: 29.190
+	min: 0.016s max: 0.102s std dev: 0.00940s window: 57
+average rate: 29.460
+	min: 0.016s max: 0.102s std dev: 0.00763s window: 87
+average rate: 29.590
+	min: 0.016s max: 0.102s std dev: 0.00658s window: 117
+average rate: 29.672
+	min: 0.016s max: 0.102s std dev: 0.00588s window: 147
