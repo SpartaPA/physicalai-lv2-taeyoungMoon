@@ -317,20 +317,6 @@ grep -n "detect(" src/perception_node.cpp    # ③ 검출 결과를 만드는 �
 
 ### 5. 답안 내용
 
-#### 공통 조건
-
-| 항목 | 내용 |
-|---|---|
-| 입력 (rosbag, 실시간 카메라 아님) | 객체 있음 `20261012_102611_no1_pillar_v1` (451프레임, 15.0초) / 객체 없음 `20261012_102713_no1_nontarget_v1` (453프레임, 15.1초). 같은 장면·카메라 고정, 기둥 유무만 다름 |
-| 비교 프레임 | 객체 있음 stamp `1791768374.766279053`, 객체 없음 stamp `1791768434.874002686` — A·B 모두 같은 stamp의 Raw·Mask·Overlay를 저장 (Raw 픽셀이 A·B 간 완전히 같음을 확인) |
-| 관찰 구간 | bag 반복 재생(`-l`) 중 조건마다 16초(한 바퀴 이상) 동안 `/target` 전부 기록 |
-| 해상도 | 424x240, rgb8 |
-| 변경 방법 | 실행 중인 노드에 `ros2 param set /perception_node <이름> <값>`. 노드의 `onParams()`(`perception_node.cpp:125`)가 즉시 `cfg_`를 교체하므로 재시작 불필요. 적용 여부는 `ros2 param get`으로 조건마다 확인 → 각 폴더의 `applied_params.txt` |
-| 수신 도구 | `tools/capture_topics.py` (토픽 구독·저장만 함, 비전 처리 없음), 실행 스크립트 `tools/run_experiments.sh`(16초 기록), `tools/run_same_frame.sh`(같은 stamp 저장) |
-| 고정한 나머지 설정 | `hsv_upper [130,255,255]`, 범위 2 `[103,150,130]~[130,255,255]` 켜짐, `open_kernel 3`, `close_kernel 5`, `max_area_ratio 0.15`, `aspect_max 4.0`, `fill_min 0.6`, `select_rule shape` |
-
----
-
 #### 실험 1. Mask 생성 — `hsv_lower`의 S (범위 1의 S 하한)
 
 **1) 가설 (실행 전 작성)**
